@@ -30,12 +30,33 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# BACKEND 
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# virtual env
+.venv/
+venv/
+env/
+
+# pytest
+.pytest_cache/
+
+# logs
+*.log
+
+# ENV FILES
+.env
 .env*
+backend/.env
 
-# vercel
-.vercel
+# OS FILES
+.DS_Store
+Thumbs.db
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# PEM FILES (CERTIFICATES, KEYS, ETC.)
+*.pem

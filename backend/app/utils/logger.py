@@ -1,0 +1,1 @@
+#common helper functions for logging
