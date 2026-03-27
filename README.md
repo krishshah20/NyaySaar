@@ -17,7 +17,6 @@
 - [Quick Test](#-quick-test)
 - [Troubleshooting](#-troubleshooting)
 - [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -231,68 +230,25 @@ Very short sentences. No jargon at all. Uses simple everyday analogies. Large co
 
 ## 📁 Folder Structure
 
-```
-nyay-saar/
+NYAY_SAAR/
+├── backend/
+│ └── app/
+│ ├── api/
+│ ├── rag/
+│ ├── services/
+│ ├── config/
+│ ├── models/
+│ ├── utils/
+│ └── main.py
 │
-├── 📁 frontend/                      ← React application (the UI)
-│   ├── 📁 public/
-│   │   └── favicon.ico
-│   │
-│   ├── 📁 src/
-│   │   ├── 📁 components/            ← Reusable UI building blocks
-│   │   │   ├── Navbar.jsx            ← Top navigation bar
-│   │   │   ├── PDFViewer.jsx         ← Renders the uploaded PDF
-│   │   │   ├── ChatBox.jsx           ← Chat interface for Q&A
-│   │   │   ├── SummaryPanel.jsx      ← Displays the AI-generated summary
-│   │   │   └── PersonaSelector.jsx   ← Dropdown to pick a persona
-│   │   │
-│   │   ├── 📁 pages/                 ← Full page views
-│   │   │   ├── HomePage.jsx          ← Landing page + PDF upload
-│   │   │   ├── DocumentPage.jsx      ← Summary + chat side-by-side view
-│   │   │   └── AboutPage.jsx         ← About the project
-│   │   │
-│   │   ├── 📁 services/              ← All API communication
-│   │   │   └── api.js                ← Axios functions for backend calls
-│   │   │
-│   │   ├── App.jsx                   ← Root component + route definitions
-│   │   └── main.jsx                  ← React entry point
-│   │
-│   ├── package.json                  ← Node dependencies
-│   ├── tailwind.config.js            ← Tailwind configuration
-│   └── vite.config.js                ← Vite bundler config
+├── frontend/
+│ ├── app/
+│ ├── public/
+│ └── package.json
 │
-│
-├── 📁 backend/                       ← FastAPI application (the AI engine)
-│   ├── 📁 app/
-│   │   ├── main.py                   ← App entry point, registers all routes
-│   │   │
-│   │   ├── 📁 routes/                ← API endpoint definitions
-│   │   │   ├── upload.py             ← POST /upload — receives PDF files
-│   │   │   ├── summarize.py          ← POST /summarize — triggers summarization
-│   │   │   └── chat.py               ← POST /chat — handles Q&A queries
-│   │   │
-│   │   ├── 📁 services/              ← Core AI/business logic
-│   │   │   ├── pdf_parser.py         ← Extracts raw text from PDFs
-│   │   │   ├── chunker.py            ← Splits text into overlapping chunks
-│   │   │   ├── embedder.py           ← Generates embeddings via HuggingFace
-│   │   │   ├── vector_store.py       ← Pinecone read/write operations
-│   │   │   ├── llm.py                ← Groq LLM calls via LangChain
-│   │   │   └── persona.py            ← Persona-specific prompt templates
-│   │   │
-│   │   ├── 📁 models/                ← Pydantic schemas for request/response
-│   │   │   ├── upload.py
-│   │   │   └── chat.py
-│   │   │
-│   │   └── 📁 utils/                 ← Shared helper functions
-│   │       └── helpers.py
-│   │
-│   ├── .env                          ← Your API keys (⚠️ never commit this!)
-│   ├── .env.example                  ← Safe template to share with others
-│   └── requirements.txt              ← All Python dependencies
-│
-├── .gitignore                        ← Tells git to ignore .env, node_modules, etc.
-└── README.md                         ← This file
-```
+├── .gitignore
+├── .env.example
+└── README.md
 
 ---
 
@@ -420,8 +376,3 @@ Pull requests are welcome! If you find a bug or have a feature idea, open an iss
 3. Commit your changes: `git commit -m "Add: your feature"`
 4. Push to your fork and open a Pull Request
 
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — free to use, modify, and distribute.
