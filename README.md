@@ -235,6 +235,8 @@ Very short sentences. No jargon at all. Uses simple everyday analogies. Large co
 
 ## 📁 Folder Structure
 
+<<<<<<< HEAD
+
 ```
 nyay-saar/
 ├── frontend/               ← React app (the UI)
@@ -252,6 +254,29 @@ nyay-saar/
 ├── .gitignore
 └── README.md
 ```
+
+=======
+NYAY_SAAR/
+├── backend/
+│ └── app/
+│ ├── api/
+│ ├── rag/
+│ ├── services/
+│ ├── config/
+│ ├── models/
+│ ├── utils/
+│ └── main.py
+│
+├── frontend/
+│ ├── app/
+│ ├── public/
+│ └── package.json
+│
+├── .gitignore
+├── .env.example
+└── README.md
+
+> > > > > > > 9722531836c32c8b6c0d9bfa2d23ba07fff55ee6
 
 ---
 
