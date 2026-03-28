@@ -1,0 +1,121 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast (Apple-Level Premium Variant)",
+  "emotional_tone": "Trustworthy, Modern, Clear, Premium, Frictionless",
+  "colors": {
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#FAFAFA",
+      "tertiary": "#F4F4F5"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "secondary": "#52525B",
+      "tertiary": "#A1A1AA",
+      "inverse": "#FFFFFF"
+    },
+    "brand_accents": {
+      "primary": "#0A0A0A",
+      "blue_glow": "#DBEAFE",
+      "purple_glow": "#F3E8FF",
+      "success": "#10B981"
+    },
+    "surface": {
+      "card": "#FFFFFF",
+      "glass": "rgba(255, 255, 255, 0.7)",
+      "border": "rgba(0, 0, 0, 0.06)"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "Cabinet Grotesk, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tighter leading-tight",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight leading-snug",
+      "h3": "text-xl sm:text-2xl font-medium tracking-tight",
+      "body": "text-base sm:text-lg text-zinc-600 leading-relaxed",
+      "label": "text-xs font-bold uppercase tracking-[0.2em] text-zinc-500",
+      "metric": "text-5xl sm:text-6xl font-light tracking-tighter text-zinc-900"
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 sm:px-8 lg:px-12",
+    "section_padding": "py-24 sm:py-32",
+    "grid_gap": "gap-8 lg:gap-12",
+    "card_padding": "p-8 sm:p-10",
+    "border_radius": "rounded-2xl sm:rounded-[2rem]",
+    "button_radius": "rounded-full"
+  },
+  "surfaces_and_shadows": {
+    "cards": "bg-white border border-zinc-200/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+    "glass_header": "bg-white/70 backdrop-blur-xl border-b border-black/5 saturate-150",
+    "glass_panel": "bg-white/60 backdrop-blur-2xl border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.08)]",
+    "interactive_hover": "hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 ease-out"
+  },
+  "components_strategy": {
+    "navbar": {
+      "style": "Sticky at top, z-50, crystal glassmorphism. Left: Nyay Saar logo (Cabinet Grotesk text, bold). Right: Home, Dashboard links. Subtle hover states on links (text color darkens)."
+    },
+    "hero": {
+      "style": "Centered, high negative space. Background features two massive blurred circles (one blue-200, one purple-200) moving slowly via Framer Motion. H1 is crisp and massive. Contains an 'AI-Powered Legal Clarity' badge (pill-shaped, glass border)."
+    },
+    "problem_cards": {
+      "style": "3-column grid. Clean white cards, 2xl border radius, 1px subtle border. Minimal icons on top left. Lots of internal padding (p-10)."
+    },
+    "solution_flow": {
+      "style": "Horizontal layout. 3 steps connected by a subtle dotted SVG line. Each step has a circular number indicator and concise text."
+    },
+    "benefits": {
+      "style": "2x2 Bento grid or standard 4-column if space permits. Asymmetric sizing for bento (e.g., one wide card, two square cards) to add tension. Background of cards uses very pale, almost imperceptible gradients."
+    },
+    "interactive_ai_tool": {
+      "style": "The centerpiece. A massive centered glassmorphic panel. Inside: dashed border drop-zone. On 'upload' interaction, swap to a split view: left side is a skeleton of a legal doc, right side is the 'AI Summary' card popping in with a neon green/success 'Verdict' highlight box."
+    },
+    "social_proof": {
+      "style": "3-column grid of massive numbers (Metrics typography) with small uppercase labels underneath. No borders, just pure typography suspended in white space."
+    },
+    "buttons": {
+      "primary": "bg-black text-white rounded-full px-8 py-4 font-medium hover:bg-zinc-800 transition-colors shadow-lg shadow-black/10",
+      "secondary": "bg-white text-black border border-zinc-200 rounded-full px-8 py-4 font-medium hover:bg-zinc-50 transition-colors"
+    }
+  },
+  "motion_and_interactions": {
+    "global": "Smooth, native-feeling easing. No bouncy or jarring animations.",
+    "scroll": "Fade up with slight Y-axis translation (e.g., y: 20, opacity: 0 -> 1) using Framer Motion 'whileInView'.",
+    "hero_bg": "Continuous, slow CSS keyframe or Framer Motion translation of the gradient orbs in the background to create an 'ambient breathing' effect.",
+    "hover_states": "Cards lift slightly (y: -4px) and increase shadow opacity. Buttons scale down marginally (scale: 0.98) on active press."
+  },
+  "media_and_icons": {
+    "icon_library": "lucide-react (stroke-width: 1.5 for a premium, lightweight feel)",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1763615445584-79f2234d3c2a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHBhc3RlbCUyMGdyYWRpZW50JTIwYmx1cnxlbnwwfHx8fDE3NzQ2NTI5NTB8MA&ixlib=rb-4.1.0&q=85",
+        "category": "background",
+        "description": "Abstract light blue and purple gradient to be used as heavily blurred background layers (e.g., opacity-30, blur-3xl) in the hero or interactive tool section."
+      },
+      {
+        "url": "https://images.pexels.com/photos/7135058/pexels-photo-7135058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "background_alt",
+        "description": "Alternative soothing pastel gradient background."
+      },
+      {
+        "url": "https://images.pexels.com/photos/36655196/pexels-photo-36655196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "contextual",
+        "description": "Black and white historic courthouse, can be used inside a bento card or section background with heavy white overlay to imply legal context without cluttering."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly use Tailwind CSS for all styling. Rely heavily on utility classes.",
+    "Install and use 'framer-motion' for all scroll and background animations.",
+    "Ensure the hero section background has absolute positioned elements with heavy blur (e.g., blur-[120px]) and pale blue/purple colors to create the 'Apple-level' ambient gradient.",
+    "The 'Interactive AI Tool' section must look like a real functional component. Use React state to simulate a drag-and-drop to loading to completed summary flow.",
+    "Use 'lucide-react' for all icons. Size them consistently.",
+    "Apply `data-testid` attributes to all buttons, input areas, and key sections.",
+    "Do NOT use generic Shadcn cards for marketing sections if they restrict layout; use raw HTML/Tailwind to build the 2xl rounded, soft-shadow glass cards.",
+    "Ensure 'Cabinet Grotesk' (or similar premium geometric font) is imported from Google Fonts/Fontshare in the global CSS."
+  ]
+}
